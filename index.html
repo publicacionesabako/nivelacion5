@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abako</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- /////////////////// PAGINA 1 //////////////////////////////-->
+
+   <div class="contenedor" >
+        <header>
+            <span>Nivelación 5°</span>
+        </header>
+
+        <div class="contenido" id="pagina1" style="display:block">
+            <titulos>
+                <div>
+                    <img class="logo" src="escudo.jpg">
+                </div>
+                <div class="titulo">
+                    <h2>Colegio Manuel del Socorro Rodríguez</h2>
+                    <h3>Institución Educativa Distrital</h3>
+                </div>
+            </titulos>
+
+            <section>
+                <h3 style="color:red">NIVELACIÓN QUINTO</h3>
+                <h4>Navega por los recursos de cada área</h4>
+                <a onclick=paginar(2)>Indicaciones</a>
+            </section>
+
+            <nav>
+                <h2>Temas</h2>
+                <a onclick="paginar(3)">Ciencias</a>
+                <a onclick="paginar(4)">Inglés</a>
+                <a onclick="paginar(5)">Español</a>
+                <a onclick="paginar(6)">Matemáticas</a>
+                <a onclick="paginar(7)">Sociales</a>
+            </nav>
+        </div>    
+
+    <!-- /////////////////// PAGINA 2 //////////////////////////////-->
+        <div class="contenido" id="pagina2"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Indicaciones</h1>
+                </div>
+            </titulos>
+    
+            <section>
+                <img src="orientacion.jpg" alt="">
+            </section>
+    
+
+        </div>
+
+     <!-- /////////////////// CIENCIAS //////////////////////////////-->
+        <div class="contenido" id="pagina3"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Ciencias</h1>
+                </div>
+            </titulos>
+            <section>
+                <div>
+                    <h2>El átomo </h2>
+                <video src="ciencias_1.mp4" controls></video>
+                <div>
+                    <h2> Elementos y compuestos </h2>
+                <video src="ciencias_2.mp4" controls></video>
+                <div>
+                    <h2> Sostén y movimiento </h2>
+                    <video src="ciencias_3.mp4" controls></video>
+                </div>
+				<div>
+                    <h2> Mezclas homogéneas y heterogéneas </h2>
+                    <video src="ciencias_4.mp4" controls></video>
+                </div>
+				<div>
+                    <h2> El nucleo </h2>
+                    <video src="ingles_1.mp4" controls></video>
+                </div>
+				<div>
+                    <h2> Tipos de núcleo </h2>
+                    <video src="ingles_2.mp4" controls></video>
+                </div>
+
+            </section>
+
+        </div>
+
+            <!-- /////////////////// INGLÉS //////////////////////////////-->
+
+        <div class="contenido" id="pagina4"  style="display:none">
+
+            <titulos>
+                <div class="titulo">
+                    <h1>Inglés</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2> Present continous </h2>
+					<img src="ingles_1.jpg">
+                </div>
+                <div>
+                    <h2> How to use a-an? </h2>
+                    <img src="ingles_2.jpg">
+                </div>
+                <div>
+                    <h2> Simple past </h2>
+                    <img src="ingles_3.jpg">
+                </div>
+				<div>
+                    <h2> Articles a/an/the </h2>
+                    <img src="ingles_4.jpg">
+                </div>
+				<div>
+                    <h2> Have to </h2>
+                    <img src="ingles_5.jpg">
+                </div>
+				<div>
+                    <h2> Can / Can´t </h2>
+                    <img src="ingles_6.jpg">
+                </div>
+				<div>
+                    <h2> Nouns </h2>
+                    <img src="ingles_7.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+                <!-- /////////////////// ESPAÑOL //////////////////////////////-->
+
+        <div class="contenido" id="pagina5"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Español</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2> Conjugación del verbo  </h2>
+                    <img src="espanol_ 1.jpg">
+                </div>
+                <div>
+                    <h2> Clases de adverbios </h2>
+                    <img src="espanol_ 2.jpg">
+                </div>
+                <div>
+                    <h2> Preposiciones </h2>
+                    <img src="espanol_ 3.jpg">
+                </div>
+				<div>
+                    <h2> Funciones del Lenguaje </h2>
+                    <img src="espanol_ 4.jpg">
+                </div>
+				<div>
+                    <h2> Verbo Ser </h2>
+                    <img src="espanol_ 5.jpg">
+                </div>
+				<div>
+                    <h2>Formas no personales del verbo </h2>
+                    <img src="espanol_ 6.jpg">
+                </div>
+				<div>
+                    <h2>Sinónimos y antónimos </h2>
+                    <img src="espanol_ 7.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+              <!-- /////////////////// MATEMÁTICAS //////////////////////////////-->
+
+    <div class="contenido" id="pagina6"  style="display:none">
+        <titulos>
+            <div class="titulo">
+                <h1>Matemáticas</h1>
+            </div>
+        </titulos>
+
+        <section>
+            <div>
+                <h2> Multiplicar 2 fracciones</h2>
+                <video src="matematicas_1.mp4" controls></video>
+            </div>
+            <div>
+                <h2> Sumar en la recta numérica </h2>
+             <video src="matematicas_2.mp4" controls></video>
+            <div>
+                <h2> Convertir segundos en minutos </h2>
+                <video src="matematicas_3.mp4" controls></video>
+            </div>
+			<div>
+                <h2> Sumas entre fracciones </h2>
+                <video src="ingles_3.mp4" controls></video>
+            </div>
+			<div>
+                <h2> Restas entre fracciones </h2>
+                <video src="ingles_4.mp4" controls></video>
+            </div>
+
+        </section>
+
+    </div>
+
+
+            <!-- /////////////////// SOCIALES //////////////////////////////-->
+        <div class="contenido" id="pagina7"  style="display:none">
+            <titulos>
+                <div class="titulo">
+                    <h1>Sociales</h1>
+                </div>
+            </titulos>
+
+            <section>
+                <div>
+                    <h2> Violencia Colombia Mitad del Siglo XX </h2>
+                    <img src="sociales_1.jpg">
+                </div>
+                <div>
+                    <h2> Partido Liberal y Conservador </h2>
+                    <img src="sociales_2.jpg">
+                </div>
+                <div>
+                    <h2> Hegemonía Conservadora </h2>
+                    <img src="sociales_3.jpg">
+                </div>
+				<div>
+                    <h2> El Bogotazo </h2>
+                    <img src="sociales_4.jpg">
+                </div>
+				<div>
+                    <h2> Gustavo Rojas Pinilla </h2>
+                    <img src="sociales_5.jpg">
+                </div>
+				<div>
+                    <h2> Sectores Económicos </h2>
+                    <img src="sociales_6.jpg">
+                </div>
+				<div>
+                    <h2> Paises en Desarrollo y Subdesarrollo </h2>
+                    <img src="sociales_7.jpg">
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- /////////////////////////  FIN  ////////////////////////////-->
+
+        <nav id="iniciox" style="display: none;"> 
+            <a  onclick="paginar(1)" style="background-color:orange; padding-left:10vw; padding-right:10vw;">Inicio</a>
+        </nav>
+
+        <footer>
+            <span>© Publicaciones Ábako</span>
+        </footer>
+   </div>    
+
+
+   <!-- ////////////////////////////////////////////////////////////////  -->
+
+
+    <script type="text/javascript">
+
+    function paginar(X){
+     
+        pagina1.style.display='none';
+        pagina2.style.display='none';
+        pagina3.style.display='none';
+        pagina4.style.display='none';
+        pagina5.style.display='none';
+        pagina6.style.display='none';
+        pagina7.style.display='none';
+
+        if (X=="1") { iniciox.style.display="none";pagina1.style.display="block"; }
+        if (X=="2") { iniciox.style.display="block";  pagina2.style.display="block"; }
+        if (X=="3") { iniciox.style.display="block";pagina3.style.display="block"; }
+        if (X=="4") { iniciox.style.display="block";pagina4.style.display="block"; }
+        if (X=="5") { iniciox.style.display="block";pagina5.style.display="block"; }
+        if (X=="6") { iniciox.style.display="block";pagina6.style.display="block"; }
+        if (X=="7") { iniciox.style.display="block";pagina7.style.display="block"; }
+    }
+
+</script>
+
+</body>
+
+</html>
